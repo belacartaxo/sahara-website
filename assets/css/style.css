@@ -171,10 +171,10 @@ main section.col2 .img4{
         width: 350px;
     }
     main section.col1{
-        height: 98vh;
+        height: 95vh;
     }
     main section.col1 button{
-        background-color: red;
+        background-color: yellow;
     }
     main section.col2 .row{
         display: flex;
