@@ -173,6 +173,9 @@ main section.col2 .img4{
     main section.col1{
         height: 98vh;
     }
+    main section.col1 button{
+        background-color: red;
+    }
     main section.col2 .row{
         display: flex;
         flex-direction: column;
