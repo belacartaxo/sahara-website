@@ -47,6 +47,9 @@ header nav ul li a{
     text-decoration: none;
 }
 
+#menu-mobile{
+    display: none;
+}
 
 
 /*main*/
@@ -164,9 +167,106 @@ main section.col2 .img4{
 }
 
 @media (max-width:740px) {
-    header nav{
+    body{
+        overflow: hidden;
+    }
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-bar{
         display: none;
     }
+
+    #menu{
+        width: 35px;
+        height: 30px;
+        margin: 30px 0px 20px 20px;
+        cursor: pointer;
+    }
+
+    #menu-bar-mobile nav{
+        display: none;
+        transition: 0.3s ease;
+    }
+
+    #menu-bar-mobile nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 30px;
+    }
+
+    #menu-bar-mobile nav ul li{
+        text-align: right;
+    }
+
+    #menu-bar-mobile, #menu-bg{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: whitesmoke;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    #menu:hover .bar{
+        background-color: rgb(226, 180, 101);
+    }
+
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+
+    #menu-bg{
+        z-index: 1;
+        width: 0;
+        height: 0;
+        background-color: rgba(226, 180, 101, 0.729);
+        border-radius: 50%;
+        transition: 0.5s ease;
+    }
+
+    #menu-bar-mobile{
+        z-index: 2;
+    }
+
+    #menu-bg.change-bg{
+        width: 550px;
+        height: 540px;
+        transform: translate(70%, -40%);
+    }
+
+    #menu-bar-mobile nav.change{
+        display: block;
+    }
+
+    .change #bar1{
+        transform: translateY(4px) rotateZ(45deg);
+    }
+
+    .change #bar2{
+        transform: rotateZ(-45deg);
+    }
+
+    .change #bar3{
+        display: none;
+    }
+
     main section {
         width: 350px;
     }
