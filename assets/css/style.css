@@ -11,7 +11,7 @@
 
 body{
     height: 100vh;
-    background: no-repeat linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/fotos/pexels-francesco-ungaro-998635.jpg');
+    background: no-repeat linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/background.jpg');
 }
 
 /*header*/
@@ -99,7 +99,7 @@ main section.col2{
 }
 
 main section.col2 .img{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/fotos/pexels-alex-azabache-3264722.jpg') center center no-repeat black;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/pic1.jpg') center center no-repeat black;
     background-size: cover;
     width: 220px;
     height: 250px;
@@ -124,15 +124,15 @@ main section.col2 .img p{
 }
 
 main section.col2 .img2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/fotos/pexels-alex-azabache-3264728.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/pic2.jpg');
 }
 
 main section.col2 .img3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fotos/pexels-alex-azabache-3185480.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pic3.jpg');
 }
 
 main section.col2 .img4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/fotos/pexels-walid-ahmad-847402.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/pic4.jpg');
 }
 
 @media (max-width:1100px) {
@@ -168,7 +168,7 @@ main section.col2 .img4{
 
 @media (max-width:740px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     #menu-mobile{
         display: block;
